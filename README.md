@@ -14,10 +14,9 @@ This repo is a PoC for using Jetson Nano and camera to detect drowsiness. It fol
 # Training
 - ```cd jetson-inference/python/training/detection/ssd```
 - Run: ```python train_ssd.py --dataset-type=voc```
+  ![training_process_image](https://github.com/user-attachments/assets/9e6a4c63-1a4d-4e5d-af75-643dcc63e29c)
 After completing the traning process, the model will be stored at models
 - Export onnx: ```python onnx_export.py --model-dir=models --labels=models/labels.txt```
-# Training process
-![training_process_image](https://github.com/user-attachments/assets/9e6a4c63-1a4d-4e5d-af75-643dcc63e29c)
 
 # Inference with live cam
 - Copy ```ssd_inference.py``` to ```jetson-inference/python/training/detection/ssd```
