@@ -7,16 +7,21 @@ This repo is a PoC for using Jetson Nano and camera to detect drowsiness. It fol
 # Dataset
 - Labeling and annotating on Roboflow https://roboflow.com/
 - Export to VOC format (refer dataset.rar)
-# Training
+# Prepare
 - Clone the repo at : https://github.com/dusty-nv/jetson-inference
-- ```cd jetson-inference/python/training/detection/ssd```
+- Build project, refer guideline https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo.md
 - Add dataset folder to data folder
+# Training
+- ```cd jetson-inference/python/training/detection/ssd```
 - Run: ```python train_ssd.py --dataset-type=voc```
 After completing the traning process, the model will be stored at models
 - Export onnx: ```python onnx_export.py --model-dir=models --labels=models/labels.txt```
-- Inference with live camera: ```python ssd_inference.py /dev/video0```
 # Training process
 image
 
 # Inference with live cam
+- Copy ```ssd_inference.py``` to ```jetson-inference/python/training/detection/ssd```
+- ```cd jetson-inference/python/training/detection/ssd```
+- I'm using usb camera, so URI of the input stream is ```/dev/video0```
+- Inference with live camera: ```python ssd_inference.py /dev/video0```
 image
