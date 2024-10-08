@@ -3,7 +3,7 @@ This repo is a PoC for using Jetson Nano and camera to detect drowsiness. It fol
 
 # Prerequisites
 - Hardware: Jetson Orin NX module, camera
-- Software: Jetpack 5.1.3, python 3.8.10, torch 2.1, torchvision 0.16
+- Software: Jetpack 5.1.3, python 3.8.10, torch 2.1 ([link](https://developer.download.nvidia.com/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl)), torchvision 0.16 ([link](https://download.pytorch.org/whl/torchvision-0.16.0-cp38-cp38-linux_aarch64.whl))
 # Dataset
 - Labeling and annotating on Roboflow https://roboflow.com/
 - Export to VOC format (refer dataset.zip)
