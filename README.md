@@ -6,7 +6,7 @@ This repo is a PoC for using Jetson Nano and camera to detect drowsiness. It fol
 - Software: Jetpack 5.1.3, python 3.8.10, torch 2.1, torchvision 0.16
 # Dataset
 - Labeling and annotating on Roboflow https://roboflow.com/
-- Export to VOC format (refer dataset.rar)
+- Export to VOC format (refer dataset.zip)
 # Prepare
 - Clone the repo at : https://github.com/dusty-nv/jetson-inference
 - Build project, refer guideline https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo.md
